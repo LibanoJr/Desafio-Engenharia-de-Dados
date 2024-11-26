@@ -1,0 +1,7 @@
+1. Por que armazenar as respostas das APIs?
+
+Armazenar as respostas das APIs no data lake tem os seguintes benefícios:
+	1.	Consolidação de Dados: Permite unificar informações de múltiplos endpoints para análises avançadas.
+	2.	Histórico de Dados: Garante que todas as operações realizadas (ex.: vendas) fiquem registradas, mesmo que os sistemas upstream alterem ou excluam dados.
+	3.	Escalabilidade e Processamento: Um data lake permite processar grandes volumes de dados com ferramentas como Spark ou Hive, possibilitando análises em tempo real e batch.
+	4.	Flexibilidade: Dados brutos podem ser reprocessados para atender a novas necessidades ou correções de erros em etapas posteriores.
