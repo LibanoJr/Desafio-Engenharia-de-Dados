@@ -1,0 +1,10 @@
+CREATE TABLE taxes (
+    taxId BIGINT AUTO_INCREMENT PRIMARY KEY,
+    guestCheckId BIGINT,
+    taxNum INT,
+    txblSlsTtl DECIMAL(10, 2),
+    taxCollTtl DECIMAL(10, 2),
+    taxRate DECIMAL(5, 2),
+    type INT,
+    FOREIGN KEY (guestCheckId) REFERENCES guestChecks(guestCheckId)
+);
