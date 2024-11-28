@@ -1,0 +1,10 @@
+CREATE TABLE menuItem (
+    miNum INT PRIMARY KEY,
+    lineItemId BIGINT,
+    modFlag BOOLEAN,
+    inclTax DECIMAL(10, 2),
+    activeTaxes VARCHAR(255),
+    prcLvl INT,
+    FOREIGN KEY (lineItemId) REFERENCES detailLines(lineItemId)
+);
+);
