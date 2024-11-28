@@ -1,0 +1,5 @@
+Abordagem
+
+	Modelagem Relacional: Tabelas foram normalizadas para evitar redundância e facilitar consultas futuras.
+	Integração com Operações de Restaurante: A estrutura permite agregar dados, calcular totais e filtrar transações por data ou ID de cliente.
+	Escalabilidade: Foi considerado um volume elevado de dados, permitindo a expansão para outras operações, como múltiplas lojas.
