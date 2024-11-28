@@ -1,15 +1,15 @@
 
 Impactos:
 
-	1.	Quebra de Processos: Scripts ou consultas que dependem do atributo taxes falharão.
-	2.	Inconsistência: Dados antigos continuarão com taxes, enquanto novos usarão taxation.
+	1.Quebra de Processos: Scripts ou consultas que dependem do atributo taxes falharão.
+	2.Inconsistência: Dados antigos continuarão com taxes, enquanto novos usarão taxation.
 
 Solução:
 
-	1.	Camada de Transformação: Adicione uma etapa no pipeline que verifique e ajuste o atributo:
+	1.Camada de Transformação: Adicione uma etapa no pipeline que verifique e ajuste o atributo:
   if "taxes" in response:
     response["taxation"] = response.pop("taxes")
 
-	2.	Documentação e Comunicação: Documente a mudança e notifique as equipes para atualizar consultas e relatórios, se necessário.
+	2.Documentação e Comunicação: Documente a mudança e notifique as equipes para atualizar consultas e relatórios, se necessário.
 
 Essa abordagem é simples e garante que a alteração não cause problemas no fluxo de dados.
